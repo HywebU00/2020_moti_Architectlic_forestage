@@ -10819,13 +10819,21 @@ body .btn-primary {
 }
 
 body .btn-primary:hover {
-  background-color: #565759;
-  border-color: #565759;
+  background-color: #856237;
+  border-color: #856237;
 }
 
 body a {
   text-decoration: none !important;
   cursor: pointer;
+}
+
+.link-style {
+  text-decoration: underline !important;
+}
+
+.link-style:hover {
+  text-decoration: none !important;
 }
 
 .language-btn {
@@ -10949,7 +10957,7 @@ thead span {
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #565759;
+  color: #525252;
 }
 
 @media (min-width: 62em) {
@@ -10957,7 +10965,7 @@ thead span {
     color: #fff;
   }
   .navbar-light .navbar-nav .nav-link:hover {
-    color: #dee2e6;
+    color: #fffac9 !important;
   }
   .navbar-light .navbar-nav .nav-link:visited {
     color: #fff;
