@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/all.css" />
+    <title>案件進度查詢-列表</title>
+  </head>
+
+  <body>
+    <header class="bg-white">
+      <div class="d-flex header-bg">
+        <div class="container pb-1">
+          <div class="d-flex justify-content-end">
+            <a class="language-btn">English</a>
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+              <img class="logo-img" src="img/logo.png" alt="" />
+              <div class="nav-logo text-primary">
+                <span class="ROC-title">
+                  <span>內政部營建署 </span><br />
+                  <span class="eg-title"
+                    >Construction and Planning Agency, Ministry of the
+                    Interior</span
+                  >
+                </span>
+                <h1>建築師證書線上申辦系統</h1>
+              </div>
+            </div>
+            <div class="row user-content">
+              <div class="col-md-12 pt-1 pb-1">
+                <div
+                  class="login-tag row justify-content-end align-items-center"
+                >
+                  <span class="mr-2 identity">
+                    凌網科技股份有限公司 <span>呂毛尼</span>
+                  </span>
+                  <a href="" class="mr-2">| 登出</a>
+                </div>
+                <div class="login-status row mt-1">
+                  <span class="mr-2 col-lg-12">
+                    登入時間: 2020/08/07 11:32:27
+                  </span>
+                  <span class="mr-2 col-lg-12"> 登出倒數: 29:34 </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav
+      class="sticky-top navbar navbar-expand-lg navbar-light navbar-bg justify-content-center primary-nav shadow-sm"
+    >
+      <div class="container">
+        <div class="phone-title">
+          <img src="img/logo.png" alt="" />
+          <div class="nav-logo text-primary">建築師證書線上申辦系統</div>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav primary-navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">待辦事項</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                線上申請
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">建築師證書申請</a>
+                <a class="dropdown-item" href="#">建築師證書換發（變更）申請</a>
+                <a class="dropdown-item" href="#">建築師證書補發申請</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                進度查詢
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">案件進度查詢</a>
+                <a class="dropdown-item" href="#">補正列表</a>
+                <a class="dropdown-item" href="#">案件撤銷</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">線上繳費</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                下載專區
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">收據下載</a>
+                <a class="dropdown-item" href="#">建築師證書下載</a>
+              </div>
+            </li>
+
+            <li class="nav-item phone-login">
+              <div class="login-tag">
+                <a href="" class="">使用者登出</a>
+              </div>
+              <div class="login-status">
+                <span class="mr-2">
+                  凌網科技股份有限公司<span>呂毛尼</span>
+                </span>
+                <span class="mr-2"> 登入時間: 2020/08/07 11:32:27 </span>
+                <span class="mr-2"> 登出倒數: 29:34 </span>
+              </div>
+            </li>
+            <li class="nav-item text-primary mt-2 language-btn-phone">
+              <a href=""> English</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="pt-md-5 pt-3 pb-5">
+        <h2 class="title text-primary pt-4">案件進度查詢-列表</h2>
+        <div class="row pb-4 pt-4">
+          <div class="col-12 mt-2">
+            <div class="card shadow-sm">
+              <div class="card-body table-responsive">
+                <table class="table">
+                  <thead class="">
+                    <tr class="thead-style">
+                      <th scope="col">項次</th>
+                      <th scope="col">申請人</th>
+                      <th scope="col">申辦項目</th>
+                      <th scope="col">申請案號</th>
+                      <th scope="col">辦理階段</th>
+                      <th scope="col">申請日期</th>
+                      <th scope="col">操作</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td scope="row">1</td>
+                      <td>陳建築</td>
+                      <td>建築師證書申請</td>
+                      <td>202000000000001</td>
+                      <td>完成</td>
+                      <td>2020/08/01</td>
+                      <td>
+                        <a href="#" class="btn btn-secondary table-btn">審核</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">1</td>
+                      <td>陳建築</td>
+                      <td>建築師證書補發申請</td>
+                      <td>202000000000002</td>
+                      <td>完成</td>
+                      <td>2020/08/20</td>
+                      <td>
+                        <a href="#" class="btn btn-secondary table-btn">審核</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a href="#" class="btn btn-primary list-btn">回查詢頁</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-bg p-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 mr-auto mb-2 footer-text">
+            <span>中華民國內政部營建署</span><br />
+            <div class="text-height mt-2">
+              地 址 | 105404 台北市松山區八德路2段342號 <br />
+              電話總機 | (02)8771-2345
+            </div>
+          </div>
+          <div class="col-md-3">
+            <img
+              src="img/accessibility.jpg"
+              class="img-fluid"
+              alt="Responsive image"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

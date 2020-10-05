@@ -1,13 +1,54 @@
 body {
   font-family: Lato, "PingFang TC", "Helvetica Neue", Helvetica, 微軟正黑體,
     新細明體, Arial, sans-serif;
+  background-color: #f9f9f9;
+
+  .btn-primary {
+    background-color: #565759;
+    border-color: #565759;
+
+    &:hover {
+      background-color: #565759;
+      border-color: #565759;
+    }
+  }
 
   a {
     text-decoration: none !important;
     cursor: pointer;
   }
+}
 
-  background-color: #f9fcff;
+.language-btn {
+  padding: 0.2em 0.8em;
+  margin-top: -1em;
+  background-color: #ede4da;
+  color: #52504a;
+
+  &:hover {
+    color: #000;
+    background-color: #ddd5cc;
+  }
+}
+
+.select-title {
+  text-align: start;
+
+  @include Large-size {
+    text-align: end;
+  }
+}
+
+.card-lg {
+  width: 50em;
+
+  .text-align {
+    text-align: start;
+
+    @include Small-size {
+      text-align: center;
+    }
+  }
 }
 
 thead {
@@ -35,6 +76,29 @@ thead {
   padding-top: 0;
 }
 
+.interview-list-block {
+  display: inline-block;
+
+  @include Medium-size {
+    display: block;
+  }
+}
+
+.list-title {
+  color: #565759;
+  background-color: rgba(0, 0, 0, 0.07);
+  font-size: 1.2rem;
+  margin-right: 1em;
+  margin-left: 1em;
+  padding: 0.3em 0.5em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.bg-light-blue {
+  background-color: #e0f6ff;
+}
+
 .list-btn {
   border-radius: 0.25rem;
   width: 7.5em;
@@ -52,47 +116,138 @@ thead {
   }
 }
 
+.navbar-bg {
+  background-color: #fff;
+  border-bottom: solid 0.5em #4a955b;
+
+
+  @include Large-size {
+    border-bottom: none;
+  }
+
+  @include Large-size {
+
+    background-color: #0b6e4f; // $primary;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $primary;
+
+  &:hover {
+    color: #565759;
+  }
+
+  @include Large-size {
+    color: #fff;
+
+    &:hover {
+      color: $light;
+    }
+
+    &:visited {
+      color: #fff;
+    }
+  }
+}
+
 .nav-tag-btn {
   letter-spacing: 0.1rem;
+  margin-bottom: 0.5em;
 
   a {
-    padding: 0.5% 2%;
-    margin-right: 1%;
-    background-color: #fff;
-    border: 0.188em solid $secondary;
+    padding: 0.6em 2em;
+    background-color: rgba(0, 0, 0, 0.06);
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    @include Medium-size {
+      padding: 0.5em 2em;
+    }
   }
 
   .active {
     color: #fff !important;
-    border: 0.188em solid #565759;
     background-color: #565759 !important;
-    border-bottom: 0.313em solid #565759;
+    position: relative;
+
+    &:after {
+      display: none;
+
+      @include Large-size {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 50%;
+        margin-left: -0.875em;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 1em 0.875em 0 0.875em;
+        border-color: #555759 transparent transparent transparent;
+      }
+    }
   }
 }
 
 .card-header {
   font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  color: #fff;
+  font-weight: bold;
+  background-color: #5d5d5d;
 }
 
 .footer-text {
   font-size: 0.9rem;
   letter-spacing: 0.05rem;
+  color: #52504a;
+
+  .text-height {
+    line-height: 1.7em;
+  }
 }
 
 .footer-bg {
   line-height: 1.8rem;
+  background-color: #cec2b3;
+}
+
+.certificate-title {
+  display: inline-block;
+
+  @include Medium-size {
+    display: block;
+  }
 }
 
 .table-title,
 .form-title {
-  font-weight: bold;
-  color: $primary;
+  color: #565759;
   letter-spacing: 0.02rem;
-  line-height: 1.5;
+  line-height: 2em;
 
   @include Small-size {
     padding-bottom: calc(0.375rem + 0.063em);
   }
+}
+
+.form-text-position {
+  .form-title {
+    text-align: start;
+
+    @include Medium-size {
+      text-align: center;
+    }
+  }
+}
+
+.photo-upload {
+  width: 9.375em;
+  height: 11.25em;
+  border: 0.063em #dee2e6 solid;
 }
 
 .form-title-wrap {
@@ -128,6 +283,14 @@ thead {
 
   .phone-login {
     width: 100%;
+  }
+
+  .language-btn-phone {
+    @include Large-size {
+      display: none;
+    }
+
+    font-size: 0.9em;
   }
 }
 
@@ -197,15 +360,24 @@ thead {
 
 .scroll-content {
   overflow: scroll;
-  height: 25.000em;
+  height: 25em;
 
   @include Medium-size {
-    height: 50.000em;
+    height: 50em;
   }
+}
+
+.scroll-list {
+  overflow: scroll;
+  height: 55.6875em;
 }
 
 .file-content {
   height: 28.125em;
+}
+
+.nav-pills .nav-link {
+  border-radius: 0;
 }
 
 .nav-link {
@@ -220,14 +392,34 @@ thead {
   }
 }
 
+.nav-link-width {
+  @include Large-size {
+    width: 12em;
+    text-align: center;
+  }
+
+  @include Extra-large {
+    width: auto;
+  }
+}
+
 .nav-logo {
   .ROC-title {
     font-size: 0.7rem;
     letter-spacing: 0;
   }
 
+  .eg-title {
+    margin-top: -0.5em;
+    display: none;
+
+    @include Small-size {
+      display: block;
+    }
+  }
+
   h1 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     letter-spacing: 0.12rem;
 
@@ -240,32 +432,52 @@ thead {
     }
 
     @include Extra-large {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
+  }
+}
+
+.index-bg {
+  background-position: center;
+  background-size: cover;
+  background-image: url(../img/index-bg-sm.png);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+
+  @include Medium-size {
+    background-position: right;
+    background-size: contain;
+    background-image: url(../img/index-bg.png);
   }
 }
 
 .header-bg {
   display: none !important;
-  padding-bottom: 1.250em;
+  padding-bottom: 1.02em;
   padding-top: 0.938em;
 
   @include Large-size {
     display: block !important;
   }
 
-  background-image: url(../img/tgos_header_bg.svg);
+  background-image: url(../img/architectlic_header_bg.svg);
   background-repeat: no-repeat;
-  background-size: auto 10.000em;
+  background-size: auto 10em;
   background-position-y: top;
   background-position: right;
 
   .logo-img {
-    width: 16%;
+    width: 12%;
     margin-right: 2%;
-
   }
+}
 
+.index-header-bg {
+  display: block !important;
+}
+
+.header-border {
+  border-bottom: 0.6em solid #4a955b;
 }
 
 .user-content {
@@ -278,26 +490,28 @@ thead {
   display: flex;
   font-weight: bold;
   justify-content: center;
+  letter-spacing: 0.1em;
 
   img {
-    height: 1.563em;
+    height: 2em;
     margin-right: 1%;
     margin-top: 2%;
     margin-right: 2%;
 
-    @include Small-size {
-      height: 1.875em;
-    }
+    // @include Small-size {
+    //   height: 1.875em;
+    // }
 
     @include Medium-size {
-      height: 1.6em;
-      margin-bottom: 0.5em;
+      margin-left: 10%;
     }
   }
 
   .nav-logo {
     margin-top: 3%;
   }
+
+  font-size: 1.2rem;
 
   @include Medium-size {
     font-size: 1.5rem;
@@ -339,7 +553,45 @@ thead {
   text-align: center;
 
   @include Medium-size {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+  }
+}
+
+.introduction-article {
+  text-align: center;
+}
+
+.application-contant {
+  color: rgb(45, 45, 45);
+  width: 85%;
+
+  .introduction-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.7em;
+    margin-bottom: 0.2em;
+    border-bottom: 0.1em solid #cec2b3;
+    margin-bottom: 0.5em;
+    line-height: 2em;
+    color: #856237;
+  }
+
+  .article-title {
+    font-weight: bold;
+    font-size: 1.15em;
+    letter-spacing: 0.05rem;
+    margin-bottom: 0.2em;
+    color: #0b6e4f;
+  }
+
+  .article-group-bg {
+    background-color: #ffffffd4;
+    box-shadow: 0 0.15rem 0.8rem rgba(0, 0, 0, 0.075);
+  }
+
+  p {
+    line-height: 1.7rem;
+    letter-spacing: 0.02rem;
   }
 }
 
@@ -394,8 +646,18 @@ thead {
   padding-top: 1rem;
 }
 
+.tbody-list {
+  td {
+    vertical-align: center;
+  }
+}
+
 .table-style {
   width: 100%;
+
+  a {
+    color: #8f530b;
+  }
 
   tbody {
     padding: 1.5rem !important;
@@ -408,14 +670,14 @@ thead {
 
   th,
   td {
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
     border-bottom: 0.063em #dee2e6 solid;
   }
 
   .no-border {
     border: 0;
   }
-
-
 }
 
 .service-span-block {
@@ -428,9 +690,17 @@ thead {
   cursor: pointer;
 }
 
-.form-style {
+.download-link {
+  color: #52504a;
+  font-size: 1.1em;
+  letter-spacing: 0.1em;
 
-  // input,
+  &:hover {
+    color: #603126;
+  }
+}
+
+.form-style {
   select {
     margin-bottom: 0.5rem;
   }
@@ -470,7 +740,7 @@ thead {
 
   label {
     margin-top: 0.5rem;
-    width: 6.250em;
+    width: 6.25em;
     text-align: right;
     margin-right: 0.5rem;
 
@@ -490,7 +760,7 @@ thead {
   @include Large-size {
     display: flex;
     justify-content: center;
-    height: 2.250em;
+    height: 2.25em;
   }
 
   @include Medium-size {
@@ -530,14 +800,83 @@ thead {
   letter-spacing: 0.01rem;
 }
 
+.title-label {
+  width: 0.2em;
+  height: 1em;
+  margin-right: 1%;
+
+}
+
 .new-application-bg {
-  background-color: #1c526f !important;
+  background-color: #4a646d !important;
+}
+
+.new-application-border {
+  border-bottom: solid 0.15em #4a646d;
+}
+
+.new-application-text {
+  color: #4a646d;
+  font-size: 1.1em;
+}
+
+.application-btn {
+  width: 13em;
+  padding: 0.6em;
+  font-size: 1.3em;
+  color: #fff;
+  background-color: #0b6e4f;
+  border-color: #0b6e4f;
+
+  &:hover {
+    background-color: #004216;
+    border-color: #004216;
+    color: #fff;
+  }
 }
 
 .change-application-bg {
-  background-color: #3b2b57 !important;
+  background-color: #2e5199 !important;
+}
+
+.change-application-border {
+  border-bottom: 0.15em solid #2e5199;
+}
+
+.change-application-text {
+  color: #2e5199;
+  font-size: 1.1em;
+}
+
+.pay-text {
+  font-size: 1.1em;
+  color: #557223;
+}
+
+.pay-border {
+  border-bottom: 0.15em solid #557223;
+}
+
+.pay-bg {
+  background-color: #557223 !important;
 }
 
 .disagree-application-bg {
-  background-color: #0c3565 !important;
+  background-color: #7a2e48 !important;
+}
+
+.disagree-application-border {
+  border-bottom: 0.15em solid #7a2e48;
+}
+
+.disagree-application-text {
+  font-size: 1.1em;
+  color: #7a2e48;
+}
+
+.comparison-bg {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  background-color: #fff;
+  padding: 1em;
+  box-sizing: border-box;
 }
