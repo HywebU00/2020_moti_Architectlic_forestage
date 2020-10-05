@@ -11047,6 +11047,7 @@ thead span {
   color: #565759;
   letter-spacing: 0.02rem;
   line-height: 2em;
+  font-weight: bold;
 }
 
 @media (min-width: 36em) {
