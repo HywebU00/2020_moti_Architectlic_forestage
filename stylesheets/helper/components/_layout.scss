@@ -8,7 +8,7 @@ body {
     border-color: #565759;
 
     &:hover {
-      background-color: #856237; //#565759;
+      background-color: #856237;
       border-color: #856237;
     }
   }
@@ -45,7 +45,7 @@ body {
   text-align: start;
 
   @include Large-size {
-    text-align: end;
+    text-align: right;
   }
 }
 
@@ -137,7 +137,7 @@ thead {
 
   @include Large-size {
 
-    background-color: #0b6e4f; // $primary;
+    background-color: #0b6e4f; 
   }
 }
 
@@ -492,7 +492,7 @@ thead {
 }
 
 .user-content {
-  text-align: end;
+  text-align: right;
 }
 
 .phone-title {
@@ -508,10 +508,6 @@ thead {
     margin-right: 1%;
     margin-top: 2%;
     margin-right: 2%;
-
-    // @include Small-size {
-    //   height: 1.875em;
-    // }
 
     @include Medium-size {
       margin-left: 10%;
