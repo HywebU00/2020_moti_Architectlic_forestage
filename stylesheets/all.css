@@ -11017,7 +11017,7 @@ thead span {
   }
 }
 
-.card-header {
+.card-header, .modal-header {
   font-size: 1.2rem;
   letter-spacing: 0.1em;
   color: #fff;
@@ -11463,7 +11463,15 @@ thead span {
 
 .modal-contant .article-title {
   font-weight: bold;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.03rem;
+  font-size: 1.15em;
+  line-height: 1.5em;
+  color: #0b6e4f;
+}
+
+.modal-contant .article-subtitle {
+  font-weight: bold;
+  font-size: 1em;
 }
 
 .modal-contant p {

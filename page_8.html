@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/all.css" />
+    <title>線上繳費-交易結果</title>
+  </head>
+
+  <body>
+    <header class="bg-white">
+      <div class="d-flex header-bg">
+        <div class="container pb-1">
+          <div class="d-flex justify-content-end">
+            <a class="language-btn">English</a>
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+              <img class="logo-img" src="img/logo.png" alt="" />
+              <div class="nav-logo text-primary">
+                <span class="ROC-title">
+                  <span>內政部營建署 </span><br />
+                  <span class="eg-title"
+                    >Construction and Planning Agency, Ministry of the
+                    Interior</span
+                  >
+                </span>
+                <h1>建築師證書線上申辦系統</h1>
+              </div>
+            </div>
+            <div class="row user-content">
+              <div class="col-md-12 pt-1 pb-1">
+                <div
+                  class="login-tag row justify-content-end align-items-center"
+                >
+                  <span class="mr-2 identity">
+                    凌網科技股份有限公司 <span>呂毛尼</span>
+                  </span>
+                  <a href="" class="mr-2">| 登出</a>
+                </div>
+                <div class="login-status row mt-1">
+                  <span class="mr-2 col-lg-12">
+                    登入時間: 2020/08/07 11:32:27
+                  </span>
+                  <span class="mr-2 col-lg-12"> 登出倒數: 29:34 </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav
+      class="sticky-top navbar navbar-expand-lg navbar-light navbar-bg justify-content-center primary-nav shadow-sm"
+    >
+      <div class="container">
+        <div class="phone-title">
+          <img src="img/logo.png" alt="" />
+          <div class="nav-logo text-primary">建築師證書線上申辦系統</div>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav primary-navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">待辦事項</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                線上申請
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">建築師證書申請</a>
+                <a class="dropdown-item" href="#">建築師證書換發（變更）申請</a>
+                <a class="dropdown-item" href="#">建築師證書補發申請</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                進度查詢
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">案件進度查詢</a>
+                <a class="dropdown-item" href="#">補正列表</a>
+                <a class="dropdown-item" href="#">案件撤銷</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">線上繳費</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                下載專區
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">收據下載</a>
+                <a class="dropdown-item" href="#">建築師證書下載</a>
+              </div>
+            </li>
+
+            <li class="nav-item phone-login">
+              <div class="login-tag">
+                <a href="" class="">使用者登出</a>
+              </div>
+              <div class="login-status">
+                <span class="mr-2">
+                  凌網科技股份有限公司<span>呂毛尼</span>
+                </span>
+                <span class="mr-2"> 登入時間: 2020/08/07 11:32:27 </span>
+                <span class="mr-2"> 登出倒數: 29:34 </span>
+              </div>
+            </li>
+            <li class="nav-item text-primary mt-2 language-btn-phone">
+              <a href=""> English</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="pt-md-5 pt-3 pb-5">
+        <h2 class="title text-primary pt-4">
+          <p>圖7 申請書頁</p>
+        </h2>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-toggle="modal"
+          data-target="#consent"
+          data-whatever="@fat"
+        >
+          確定
+        </button>
+        <!-- 申請問題頁視窗 -->
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content shadow-sm">
+            <div class="modal-header">
+              <div class="modal-title text-white" id="exampleModalLabel">
+                建築師證書核發、補（換）發線上申辦線上申請系統使用聲明事項
+              </div>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true" class="text-light">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body card-table">
+              <div class="row modal-contant">
+                <div class="col-12 mb-3">
+                  <div class="article-title">
+                    一、內政部營建署（以下簡稱營建署）依據建築師法第五條及建築師法施行細則第二條規定，
+                    為規範建築師證書核發、補（換）發線上申請及發證作業，特訂定本須知。
+                  </div>
+                </div>
+                <div class="col-12 mb-3">
+                  <div class="article-title">二、申辦項目及應備文件</div>
+                  <p>
+                    <span class="article-subtitle"
+                      >（一）建築師證書核發申請</span
+                    ><br />
+                    1.身分證(本國人)或護照(外國人)。<br />
+                    2.考試院證書或國與國互惠原則建築師考試及格或合格證書。<br />
+                    3.最近半年內二吋半身脫帽正面相片(同我國國民身分證相片規格)。<br />
+                    <span class="article-subtitle"
+                      >（二）建築師證書遺失補發申請</span
+                    >
+                    <br />
+                    1.身分證(本國人)或護照(外國人)。<br />
+                    2.考試院證書或國與國互惠原則建築師考試及格或合格證書。<br />
+                    3.遺失切結書。<br />
+                    4.最近半年內二吋半身脫帽正面相片(同我國國民身分證相片規格)。<br />
+                    <span class="article-subtitle"
+                      >（三）建築師證書換發(資料變更)申請</span
+                    ><br />
+                    1.身分證(本國人)或護照(外國人) ，更名者請加附戶籍謄本。<br />
+                    2.考試院證書或國與國互惠原則建築師考試及格或合格證書。<br />
+                    3.原領建築師證書。<br />
+                    4.最近半年內二吋半身脫帽正面相片(同我國國民身分證相片規格)。<br />
+                  </p>
+                </div>
+                <div class="col-12 mb-3">
+                  <div class="article-title">三、申請及領證方式</div>
+                  <p>
+                    <span class="article-subtitle"
+                      >（一）申請人首次登入系統時，本國人請使用自然人憑證，外國人請使用註冊機制註冊為會員，<br />以網際網路至本署「建築師證書核發、補（換）發線上申辦系統」<br />（以下簡稱線上系統，網址：https://
+                      ）進行申請。</span
+                    ><br />
+                    <span class="article-subtitle"
+                      >（二）經核對申請人應備文件無誤後，將第二點規定之應備文件正本掃描為電子檔，上傳至線上系統，並填寫完成線上系統申請書，經審核許可並完成繳費後，即可下載列印建築師證書電子檔（檔案格式為PDF檔）。</span
+                    ><br />
+                    <span class="article-subtitle">（三）注意事項</span><br />
+                    1.為維護建築師證書之列印品質，應使用最新版之PDF閱讀軟體讀取及列印建築師證書電子檔。<br />
+                    2.列印線上系統核發之建築師證書時，請使用A4白色紙張，並以雷射印表機彩色滿版列印。<br />
+                  </p>
+                </div>
+                <div class="col-12 mb-3">
+                  <div class="article-title">四、證照費</div>
+                  <p>
+                    <span class="article-subtitle"
+                      >（一）證照費新臺幣一千伍佰元。</span
+                    ><br />
+                    <span class="article-subtitle"
+                      >（二）請於線上系統申請核可後，十四天內繳納。</span
+                    ><br />
+                  </p>
+                </div>
+                <div class="col-12 mb-3">
+                  <div class="article-title">五、審核期間</div>
+                  <p>
+                    如無須補件或特殊情況為七個工作日（不含國定及例假日），申請文件不全應於經通知五個工作日內補正；屆期不補正或補正不全者，駁回其申請；不能補正者，逕駁回其申請（補正後須重新計算七個審核工作日）。
+                  </p>
+                </div>
+                <div
+                  class="col-12 mb-3 d-flex justify-content-end align-items-center"
+                >
+                  <input type="checkbox" class="mr-2" />
+                  <span class="article-title">同意上述條款，請打勾</span>
+                </div>
+              </div>
+              <div class="row mt-4 d-flex justify-content-end">
+                <button
+                  type="button"
+                  class="btn btn-secondary mr-2"
+                  data-dismiss="modal"
+                >
+                  取消
+                </button>
+                <button type="button" class="btn btn-primary mr-2">確定</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 申請問題頁視窗(隱藏) -->
+        <div
+          class="modal fade"
+          id="consent"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content shadow-sm">
+              <div class="modal-header">
+                <div class="modal-title text-white" id="exampleModalLabel">
+                  建築師證書核發、補（換）發線上申辦線上申請系統使用聲明事項
+                </div>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true" class="text-light">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body card-table">
+                <div class="row modal-contant">
+                  <div class="col-12 mb-3">
+                    <div class="article-title">
+                      一、內政部營建署（以下簡稱營建署）依據建築師法第五條及建築師法施行細則第二條規定，
+                      為規範建築師證書核發、補（換）發線上申請及發證作業，特訂定本須知。
+                    </div>
+                  </div>
+                  <div class="col-12 mb-3">
+                    <div class="article-title">二、申辦項目及應備文件</div>
+                    <p>
+                      <span class="article-subtitle"
+                        >（一）建築師證書核發申請</span
+                      ><br />
+                      1.身分證(本國人)或護照(外國人)。<br />
+                      2.考試院證書或國與國互惠原則建築師考試及格或合格證書。<br />
+                      3.最近半年內二吋半身脫帽正面相片(同我國國民身分證相片規格)。<br />
+                      <span class="article-subtitle"
+                        >（二）建築師證書遺失補發申請</span
+                      >
+                      <br />
+                      1.身分證(本國人)或護照(外國人)。<br />
+                      2.考試院證書或國與國互惠原則建築師考試及格或合格證書。<br />
+                      3.遺失切結書。<br />
+                      4.最近半年內二吋半身脫帽正面相片(同我國國民身分證相片規格)。<br />
+                      <span class="article-subtitle"
+                        >（三）建築師證書換發(資料變更)申請</span
+                      ><br />
+                      1.身分證(本國人)或護照(外國人) ，更名者請加附戶籍謄本。<br />
+                      2.考試院證書或國與國互惠原則建築師考試及格或合格證書。<br />
+                      3.原領建築師證書。<br />
+                      4.最近半年內二吋半身脫帽正面相片(同我國國民身分證相片規格)。<br />
+                    </p>
+                  </div>
+                  <div class="col-12 mb-3">
+                    <div class="article-title">三、申請及領證方式</div>
+                    <p>
+                      <span class="article-subtitle"
+                        >（一）申請人首次登入系統時，本國人請使用自然人憑證，外國人請使用註冊機制註冊為會員，<br />以網際網路至本署「建築師證書核發、補（換）發線上申辦系統」<br />（以下簡稱線上系統，網址：https://
+                        ）進行申請。</span
+                      ><br />
+                      <span class="article-subtitle"
+                        >（二）經核對申請人應備文件無誤後，將第二點規定之應備文件正本掃描為電子檔，上傳至線上系統，並填寫完成線上系統申請書，經審核許可並完成繳費後，即可下載列印建築師證書電子檔（檔案格式為PDF檔）。</span
+                      ><br />
+                      <span class="article-subtitle">（三）注意事項</span><br />
+                      1.為維護建築師證書之列印品質，應使用最新版之PDF閱讀軟體讀取及列印建築師證書電子檔。<br />
+                      2.列印線上系統核發之建築師證書時，請使用A4白色紙張，並以雷射印表機彩色滿版列印。<br />
+                    </p>
+                  </div>
+                  <div class="col-12 mb-3">
+                    <div class="article-title">四、證照費</div>
+                    <p>
+                      <span class="article-subtitle"
+                        >（一）證照費新臺幣一千伍佰元。</span
+                      ><br />
+                      <span class="article-subtitle"
+                        >（二）請於線上系統申請核可後，十四天內繳納。</span
+                      ><br />
+                    </p>
+                  </div>
+                  <div class="col-12 mb-3">
+                    <div class="article-title">五、審核期間</div>
+                    <p>
+                      如無須補件或特殊情況為七個工作日（不含國定及例假日），申請文件不全應於經通知五個工作日內補正；屆期不補正或補正不全者，駁回其申請；不能補正者，逕駁回其申請（補正後須重新計算七個審核工作日）。
+                    </p>
+                  </div>
+                  <div
+                    class="col-12 mb-3 d-flex justify-content-end align-items-center"
+                  >
+                    <input type="checkbox" class="mr-2" />
+                    <span class="article-title">同意上述條款，請打勾</span>
+                  </div>
+                </div>
+                <div class="row mt-4 d-flex justify-content-end">
+                  <button
+                    type="button"
+                    class="btn btn-secondary mr-2"
+                    data-dismiss="modal"
+                  >
+                    取消
+                  </button>
+                  <button type="button" class="btn btn-primary mr-2">
+                    確定
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer-bg p-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 mr-auto mb-2 footer-text">
+            <span>中華民國內政部營建署</span><br />
+            <div class="text-height mt-2">
+              地 址 | 105404 台北市松山區八德路2段342號 <br />
+              電話總機 | (02)8771-2345
+            </div>
+          </div>
+          <div class="col-md-3">
+            <img
+              src="img/accessibility.jpg"
+              class="img-fluid"
+              alt="Responsive image"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
